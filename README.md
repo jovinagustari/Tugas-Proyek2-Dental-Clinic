@@ -1,4 +1,4 @@
-A Responsive Design Web Project for Web Programming I Lecture with theme Dental Clinic
+A Responsive Web Design Project for Web Programming I Lecture with "Dental Clinic" theme
 
 Our Team Contributor :
 - Jovina Gustari Juwita
