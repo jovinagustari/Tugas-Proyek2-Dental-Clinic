@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Home page</title>
+    <style>
+        .h1-head {
+            margin: 2%;
+            text-align: center;
+        }
+        body {
+            height: 120vh;
+            background-color: aliceblue;
+        }
+        .samping {
+            float: left;
+            margin-top: 0;
+            margin-right: 2%;
+        }
+        #but {
+            text-align: right;
+        }
+        .content {
+            text-align: justify;
+        }
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            height: 100px;
+            width: 100%;
+            color: white;
+            background-color: silver;
+        }
+
+        #b-dokter {
+            border: 1px solid black;
+        }
+
+        .foto-marg {
+            margin-right: 20px;
+            margin-left: 20px;
+            margin-bottom: 20px;
+        }
+
+        #aside {
+            border: 1px solid black;
+            margin-top: 20px;
+            padding: 0;
+        }
+        #no-border {
+            border: none;
+        }
+        .h3in {
+            margin: 0;
+            text-align: center;
+        }
+        .samping {
+            width: 100px;
+            height: 100px;
+        }
+        .foto-marg {
+            margin-right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="h1-head">Klinik Kesehatan Gigi Ananda - Depok</h1>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1">
+                        <span class="navbar-toggler-icon"></span>
+                    </button> <a class="navbar-brand" href="#">HaloDoc.</a>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="navbar-nav">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Layanan</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Booking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Testimoni</a>
+                            </li>
+                        </ul>
+                        <form class="form-inline">
+                            <input class="form-control mr-sm-2" type="text" />
+                            <button class="btn btn-primary my-2 my-sm-0" type="submit" id="but">
+                                Search
+                            </button>
+                        </form>
+                        <ul class="navbar-nav ml-md-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Login <span class="sr-only">(current)</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row" >
+            <div class="col-md-8">
+                <br>
+                <br>
+                <h3 class="h32in">
+                    Klinik Kesehatan Gigi Ananda
+                </h3>
+                <p class="content">
+                    <strong></strong>Punya masalah gigi atau 
+                    sedang membutuhkan perawatan gigi dan mulut? FDC Dental Clinic menyediakan berbagai layanan
+                     perawatan gigi yang bisa Anda gunakan. Salah satu klinik dental terbaik untuk berbagai jenis
+                      perawatan gigi. <em>
+                     </em>  Kami menjamin bahwa setiap pasien ditangani dengan  <small>perawatan dan pelayanan prima.
+                         Karena kenyamanan pasien adalah prioritas kami.</small>
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>Layanan</p>
+                        <img alt="Bootstrap Image Preview"
+                            src="img/klinik.jpg" class="samping" />
+                        <p>Kesehatan gigi saat ini telah menjadi kebutuhan primer untuk meningkatkan kepercayaan diri seiring dengan meningkatnya kebutuhan akan estetika telah menggeser paradigma masyarakat. Dengan teknologi terkini dalam perawatan gigi.
+                            Veneer adalah salah satu solusi untuk mereformasi dan mencerahkan senyum kamu.</p>
+                    </div>
+                    <div class="col-md-6" id="no-border">
+                        <p>Jadwal Praktik</p>
+                        <img alt="Bootstrap Image Preview"
+                            src="img/IMG_0385.jpg" class="samping"/>
+                        <p>Selasa, 24 Januari 2023 <br> Jam 10:00 - 11:00</p>
+                        <p>Jum'at, 3 Februari 2023 <br> Jam 07:00 - 09:00</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <div class="col-md-4" id="aside">
+                <br>
+                <br>
+                <h3 class="h3in">
+                    Link Akses Cepat
+                </h3>
+                <ul>
+                    <li class="list-item">
+                        <a href="#">Layanan</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">Jadwal</a>
+                    </li>
+                    <li class="list-item">
+                        <a href="#">Dokter Kami</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div class="row" id="b-dokter">
+            <fieldset>
+            <legend>Dokter Kami</legend>
+            <div class="col-md-12">
+                <img alt="Bootstrap Image Preview" src="img/doctor-120x120.png" class="foto-marg" />
+                <img alt="Bootstrap Image Preview" src="img/doctor-120x120.png" class="foto-marg" />
+                <img alt="Bootstrap Image Preview" src="img/doctor-120x120.png" class="foto-marg" />
+                <img alt="Bootstrap Image Preview" src="img/doctor-120x120.png" class="foto-marg" />
+            </div>
+        </fieldset>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <footer>Develope By Mahasiswa STT NF</footer>
+
+</body>
+
+</html>
