@@ -10,8 +10,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
 
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet" />
+    <!-- Icon -->
+    <link rel="icon" href="../dist/img/logo.png"/>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -28,28 +28,41 @@
         font-family: "Poppins", sans-serif;
       }
 
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
       @media (min-width: 768px) {
         .bd-placeholder-img-lg {
           font-size: 3.5rem;
         }
       }
 
-      img-fluid {
+      .img-fluid {
         object-fit: cover;
+      }
+
+      .card {
+        max-width: 18rem;
+        height: 25rem; 
+        border-radius: 15px;
+      }
+
+      .card-img-top {
+        margin: auto;
+        border-radius: 15px;
+      }
+      
+      .card-title {
+        font-weight: bold;
+      }
+
+      .card-about {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 15px;
       }
     </style>
   </head>
   <body>
-    <!-- Navbar Section of About -->
+
+    <!-- Navbar -->
     <section id="navbar">
       <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-lg" style="background-color: #d4f1f4">
         <!-- Logo Brand -->
@@ -82,28 +95,8 @@
             <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
               <form class="form-inline ml-0 ml-md-3">
                 <div class="navbar navbar-expand-lg">
-                  <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search" />
-                  <a class="text-muted" href="#" aria-label="Search">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="20"
-                      height="20"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      class="mx-3"
-                      role="img"
-                      viewBox="0 0 24 24"
-                      focusable="false"
-                    >
-                      <title>Search</title>
-                      <circle cx="10.5" cy="10.5" r="7.5" />
-                      <path d="M21 21l-5.2-5.2" />
-                    </svg>
-                  </a>
-                  <a class="btn btn-sm btn-outline-dark" href="#">Sign up</a>
+                  <!-- Here a line (101) for search input (dah ku hapus yg sebelumnya) -->
+                  <a class="btn btn-sm btn-outline-dark align-self-center" href="#">Login</a>
                 </div>
               </form>
             </ul>
@@ -117,141 +110,182 @@
     <br />
 
     <!-- Carousel Title -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-        <li data-target="#myCarousel" data-slide-to="2"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="../dist/img/benyamin-bohlouli-B_sK_xgzwVA-unsplash.jpg" class="img-fluid" alt="image in carousel 1" />
-
-          <div class="container">
-            <div class="carousel-caption text-left">
-              <h1 class="display-4" style="font-weight: 500;">Best Clinic</h1>
-              <p>Klinik gigi pilihan yang terbaik untuk Anda.</p>
-              <p><a class="btn btn-lg text-light btn-dark" style="background-color: #05445E;" href="#">Start to explore!</a></p>
+    <section>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../dist/img/benyamin-bohlouli-B_sK_xgzwVA-unsplash.jpg" class="img-fluid" alt="image in carousel 1" />
+  
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1 class="display-4" style="font-weight: 500;">Best Clinic</h1>
+                <p>Klinik gigi pilihan yang terbaik untuk Anda.</p>
+                <p><a class="btn btn-lg text-light btn-dark" style="background-color: #05445E;" href="#">Start to explore!</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../dist/img/jose-vazquez-4SUyx4KQ5Ik-unsplash.jpg" class="img-fluid" alt="image in carousel 1" />
+  
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 class="display-4" style="font-weight: 500;">Comfortable</h1>
+                <p>Klinik gigi teraman dan nyaman yang pernah Anda temui!</p>
+                <p><a class="btn btn-lg text-light btn-dark" style="background-color: #05445E;" href="#">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+              <img src="../dist/img/quang-tri-nguyen-VxVO1zrY5F8-unsplash.jpg" class="img-fluid" alt="image in carousel 1" />
+  
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1 class="display-4" style="font-weight: 500;">Newest Technology</h1>
+                <p>Dengan teknologi yang terbaru dan berkualitas.</p>
+                <p><a class="btn btn-lg text-light btn-dark" style="background-color: #05445E;" href="#">Booking here!</a></p>
             </div>
           </div>
         </div>
-        <div class="carousel-item">
-            <img src="../dist/img/jose-vazquez-4SUyx4KQ5Ik-unsplash.jpg" class="img-fluid" alt="image in carousel 1" />
-
-          <div class="container">
-            <div class="carousel-caption">
-              <h1 class="display-4" style="font-weight: 500;">Comfortable</h1>
-              <p>Klinik gigi teraman dan nyaman yang pernah Anda temui!</p>
-              <p><a class="btn btn-lg text-light btn-dark" style="background-color: #05445E;" href="#">Learn more</a></p>
-            </div>
-          </div>
-        </div>
-        <div class="carousel-item">
-            <img src="../dist/img/quang-tri-nguyen-VxVO1zrY5F8-unsplash.jpg" class="img-fluid" alt="image in carousel 1" />
-
-          <div class="container">
-            <div class="carousel-caption text-right">
-              <h1 class="display-4" style="font-weight: 500;">Newest Technology</h1>
-              <p>Dengan teknologi yang terbaru dan berkualitas.</p>
-              <p><a class="btn btn-lg text-light btn-dark" style="background-color: #05445E;" href="#">Booking here!</a></p>
-          </div>
-        </div>
+        <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
       </div>
-      <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-      </button>
-    </div>
-    <br> <br>
+    </section>
 
     <!-- Main Section -->
-    <div class="container">
+    <section class="mt-5" style="margin-bottom: 3rem;">
+      <div class="container">
         <!-- Akses cepat -->
         <div class="row py-4">
             <div class="col-lg-10 text-center mx-auto">
                 <h1 class="mb-5">Welcome to Blue Dental</h1>
             </div>
-            <div class="card col-lg-4 text-center mx-auto" style="max-width: 18rem; height: 25rem;">
+            <div class="card col-lg-4 text-center mx-auto shadow-lg">
               <img src="../dist/img/receive.png" class="mt-4" alt="">
               <h2 class="mt-4"><a href="#" class="text-decoration-none text-info">Layanan</a></h2>
             </div><!-- /.col-lg-4 -->
-            <div class="card col-lg-4 text-center mx-auto" style="max-width: 18rem;">
+            <div class="card col-lg-4 text-center mx-auto shadow-lg">
               <img src="../dist/img/heart.png" class="mt-4" alt="">
               <h2 class="mt-4"><a href="#" class="text-decoration-none text-info">Jadwal</a></h2>
             </div><!-- /.col-lg-4 -->
-            <div class="card col-lg-4 text-center mx-auto" style="max-width: 18rem;">
+            <div class="card col-lg-4 text-center mx-auto shadow-lg">
               <img src="../dist/img/hands.png" class="mt-4" alt="">
               <h2 class="mt-4"><a href="#" class="text-decoration-none text-info">Dokter Kami</a></h2>
             </div><!-- /.col-lg-4 -->
         </div><!-- /.row -->
-        <br> <br>
+    </section>
+    
+    <br> <br>
 
-        <!-- About blue dental -->
-        <div class="container">
-          <div class="row mt-5">
-            <div class="col">
-                <h1>Blue Dental</h1>
-            </div>
-          </div>
-          <div class="row py-4">
-            <div class="col img">
-                <img src="../dist/img/benyamin-bohlouli-B_sK_xgzwVA-unsplash.jpg" class="h-100 w-100" style="border-radius: 20px;" alt="">
-            </div>
-            <div class="col">
-                <p>Berdiri sejak 2022. Blue Dental adalah klinik gigi yang berdedikasi pada senyuman Anda indah dan sehat Anda. Saat ini Blue Dental dikepalai oleh Dr. Iffah Karimah P.hD. Dengan Chief Executive Officer Dr. Jovina Gustari Juwita P.hD. Dokter bedah gigi terbaik, Drg. Spesialis Saraf Gigi, Lintang Kasyfi Ramadhan, P.hD. Beserta Drg. Fitriani, M.T.</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- Card for dokter kami -->
+    <!-- About blue dental -->
+    <section style="background-color: #d4f1f4;">
+      <div class="container" style="padding-top: 0.5rem; padding-bottom: 3rem;">
         <div class="row mt-5">
           <div class="col">
-              <h1>Dokter Kami</h1>
+              <h1>Blue Dental</h1>
           </div>
         </div>
-        <div class="row row-cols-1 row-cols-md-3">
-            <div class="col mb-4">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-4">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a short card.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-4">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                </div>
-              </div>
-            </div>
-            <div class="col mb-4">
-              <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                </div>
+        <div class="row py-4">
+          <div class="col img">
+            <img src="../dist/img/benyamin-bohlouli-B_sK_xgzwVA-unsplash.jpg" class="h-100 w-100" style="border-radius: 20px;" alt="">
+          </div>
+          <div class="col align-self-center">
+            <p class="card-about">Blue Dental adalah klinik gigi yang berdedikasi pada senyuman Anda indah dan sehat Anda. Saat ini Blue Dental dikepalai oleh Prof. Dr. Drg. Lucyana Odd, M.D Sc. Dibawah kepemimpinannya Blue Dental saat ini sudah banyak berkembang dibagian peralatan yang canggih dan perluasan cabang klinik.</p>
+            <p class="card-about">Saat ini Blue Dental sudah menyebar di 7 kota yang ada di Indonesia, salah satu pusatnya berada di Depok. Blue Dental sudah melayani banyak pasien sejak 2022. Kami berkembang dengan masukan dan kritik yang Anda berikan kepada kami.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br> <br>
+        
+    <!-- Card for dokter kami -->
+    <section>
+      <div class="container">
+        <div class="row mt-5 mb-4">
+          <div class="col">
+            <h1>Dokter Kami</h1>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Card dokter 1 -->
+          <div class="col mb-4">
+            <div class="card h-100 shadow-md">
+              <img src="../dist/img/doctor5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Amalia</h5>
+                <p class="card-text">Drg. Amalia Rahmah, Sp. KG, merupakan spesialis konservasi gigi yang mengutakaman kenyamanan pasien.</p>
+                <a href="#" class="btn btn-outline-info" style="border-radius: 6px;">More</a>
               </div>
             </div>
           </div>
+          <!-- Card dokter 2 -->
+          <div class="col mb-4">
+            <div class="card h-100 shadow-md">
+              <img src="../dist/img/doctor2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Kirana</h5>
+                <p class="card-text">Drg. Kirana Julia, Sp. KG, merupakan ahli spesialis ortodonti yang meneliti posisi rahang pasien yang tidak normal.</p>
+                <br><br><a href="#" class="btn btn-outline-info" style="border-radius: 6px;">View</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card dokter 3 -->
+          <div class="col mb-4">
+            <div class="card h-100 shadow-md">
+              <img src="../dist/img/doctor3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Rizki</h5>
+                <p class="card-text">Drg. Rizki Febryan, Sp. RKG, adalah seorang dokter yang akan mengambil gambar dan data x-ray rongga mulut Anda.</p>
+                <br><a href="#" class="btn btn-outline-info" style="border-radius: 6px;">View</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card dokter 4 -->
+          <div class="col mb-4">
+            <div class="card h-100 shadow-md">
+              <img src="../dist/img/doctor4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Devy</h5>
+                <p class="card-text">Drg. Devy Sendy Sp. KGA, adalah seorang dokter spesialis gigi anak, ia merawat gigi anak-anak dengan keceriaan.</p>
+                <br><br><a href="#" class="btn btn-outline-info" style="border-radius: 6px;">View</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card dokter 5 -->
+          <div class="col mb-4">
+            <div class="card h-100 shadow-md">
+              <img src="../dist/img/doctor1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Drg. Zain</h5>
+                <p class="card-text">Drg. Zain Abdullah, Sp. KG, merupakan spesialis konservasi gigi yang akan menemani perawatan Anda dengan ketelitian.</p>
+                <br><a href="#" class="btn btn-outline-info" style="border-radius: 6px;">View</a>
+              </div>
+            </div>
+          </div>
+          <!-- ./Card dokter 5 -->
+        </div>
       </div>
+    </section>
+
+    <br> <br>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="my-3 pt-2 text-muted text-center text-small">
+      <p class="mb-1">&copy; Develop by Kelompok 3 | TI02</p>
+    </footer>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
