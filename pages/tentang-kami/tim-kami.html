@@ -6,20 +6,24 @@
     <meta name="description" content="" />
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
     <meta name="generator" content="Hugo 0.101.0" />
-    <title>Tim Kami | Blue Dental</title>
+    <title>Tim Kami | Blue Dental Clinic</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/album/" />
 
     <!-- Icon -->
-    <link rel="icon" href="../dist/img/logo.png"/>
+    <link rel="icon" href="../../dist/img/BlueDentalFavicon.png"/>
 
     <!-- Bootstrap core CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+
+    <!-- Theme style -->
+    <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+    
 
     <style>
       * {
@@ -36,53 +40,66 @@
     <!-- Custom styles for this template -->
     <link href="album.css" rel="stylesheet" />
   </head>
-  <body>
-    <!-- Navbar -->
-    <section id="navbar">
-      <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-lg" style="background-color: #D4F1F4">
-        <!-- Logo Brand -->
+  <body class="layout-top-nav">
+    <div class="wrapper">
+      <!-- Navbar -->
+      <nav class="main-header navbar navbar-expand-md navbar-light navbar-white fixed-top shadow-lg" style="background-color: #d4f1f4">
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="../dist/img/logo.png" width="50px" height="50px" alt="" />Blue Dental</a>
-          <!-- Navbar -->
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Beranda</a>
+          <a href="tim-kami.html" class="navbar-brand">
+            <img src="../../dist/img/BlueDentalLogo.png" alt="Blue Dental Logo" class="brand-image img-circle elevation-3"
+              style="opacity: .8">
+            <span class="brand-text font-weight-light">Blue Dental</span>
+          </a>
+  
+          <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+  
+          <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+            <!-- Left navbar links -->
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a href="../../index.html" class="nav-link">Home</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Layanan</a>
+              <li class="nav-item">
+                <a href="../Layanan/layanan.html" class="nav-link">Layanan</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Booking</a>
+              <li class="nav-item">
+                <a href="../forms/form_booking.html" class="nav-link">Booking</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Testimoni</a>
+              <li class="nav-item">
+                <a href="../testimoni.html" class="nav-link">Testimoni</a>
               </li>
-              <li class="nav-item active dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"> Tentang </a>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item mb-2" href="#">Tentang Blue Dental</a>
-                  <a class="dropdown-item" href="#">Tim Kami</a>
-                </div>
+              <li class="nav-item">
+                <a href="about.html" class="nav-link active">Tentang</a>
               </li>
             </ul>
-            <!-- Search Form -->
-            <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-              <form class="form-inline ml-0 ml-md-3">
-                <div class="navbar navbar-expand-lg">
-                  <!-- Here a line (101) for search input (dah ku hapus yg sebelumnya) -->
-                  <a class="btn btn-sm btn-outline-dark align-self-center" href="#">Login</a>
-                </div>
-              </form>
-            </ul>
-            <!-- ./Search Form  -->
           </div>
+  
+          <!-- Right navbar links -->
+          <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+            <!-- SEARCH FORM -->
+            <form class="form-inline ml-0 ml-md-3">
+              <div class="input-group input-group-sm">
+                <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                  <button class="btn btn-navbar" type="submit">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </div>
+              </div>
+            </form>
+            <li class="nav-item">
+              <a class="nav-link" data-widget="login" href="../login/login.html" role="button">
+                Login
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
-    </section>
-    <br />
-    <br />
-    <br />
+      <!-- /.navbar -->
+    </div>
 
     <main role="main">
       <section class="jumbotron text-center" style="background-color: #D4F1F4; padding: 7rem;">
@@ -97,7 +114,7 @@
             <!-- Profil Tim -->
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm h-100">
-                <img src="../dist/img/fitriani.jpg" alt="">
+                <img src="../../dist/img/fitriani.jpg" alt="">
                 <div class="card-body">
                   <p class="card-text">
                     <p>Nama     : Fitriani</p>
@@ -111,7 +128,7 @@
 
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm h-100">
-                <img src="../dist/img/iffah2.png" alt="">
+                <img src="../../dist/img/iffah2.png" alt="">
                 <div class="card-body">
                   <p class="card-text">
                     <p class="card-text">
@@ -127,7 +144,7 @@
 
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm h-100">
-                <img src="../dist/img/jovina.jpg" alt="">
+                <img src="../../dist/img/jovina.jpg" alt="">
                 <div class="card-body">
                     <p class="card-text">
                         <p>Nama     : Jovina Gustari Juwita</p>
@@ -141,7 +158,7 @@
 
             <div class="col-md-3">
               <div class="card mb-4 shadow-sm h-100">
-                <img src="../dist/img/lintang.jpg" alt="">
+                <img src="../../dist/img/lintang.jpg" alt="">
                 <div class="card-body">
                     <p class="card-text">
                         <p>Nama     : Lintang Kasyfi Ramadhan</p>
@@ -160,9 +177,18 @@
     </main>
 
     <!-- Footer -->
-    <footer class="my-3 pt-2 text-muted text-center text-small">
-        <p class="mb-1">&copy; Develop by Kelompok 3 | TI02</p>
+    <footer class="my-3 pt-2 bg-light text-muted text-center text-small">
+        <p class="mb-1">Develop by Kelompok III - TI02 &copy; 2022</p>
     </footer>
+
+    <!-- REQUIRED SCRIPTS -->
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
 
     <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

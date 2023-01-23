@@ -4,7 +4,7 @@ function login(){
 
     if (username == 'admin' && password == 'admin'){
         alert("Login Berhasil");
-        login.setAttribute('action', '../admin.html');
+        login.setAttribute('action', '../../admin/admin_booking.html');
     }
     else if(username == "" && password == ""){
         alert("isi username & password");
@@ -20,3 +20,4 @@ function login(){
     }
 
 }
+
