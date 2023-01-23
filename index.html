@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/cover/" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+
+    <!-- Theme style -->
+  <link rel="stylesheet" href="dist/css/adminlte.min.css">
+
+    <!-- Icon -->
+    <link rel="icon" href="dist/img/BlueDentalFavicon.png"/>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="plugins/fontawesome-free/css/all.min.css" />
+
+    <title>Best Dental Clinic in Indonesia | Blue Dental</title>
+
+    <style>
+      * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .image {
+        opacity: 0.8;
+      }
+
+      .img-fluid {
+        object-fit: cover;
+      }
+
+      .card {
+        max-width: 18rem;
+        height: 25rem; 
+        border-radius: 15px;
+      }
+
+      .card-img-top {
+        margin: auto;
+        border-radius: 15px;
+      }
+      
+      .card-title {
+        font-weight: bold;
+      }
+
+      .card-about {
+        background-color: #ffffff;
+        padding: 1rem;
+        border-radius: 15px;
+      }
+    </style>
+  </head>
+  <body class="layout-top-nav">
+
+    <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand-md navbar-light navbar-white fixed-top shadow-lg" style="background-color: #d4f1f4">
+      <div class="container">
+        <a href="pages/tentang-kami/tim-kami.html" class="navbar-brand">
+          <img src="dist/img/BlueDentalLogo.png" alt="Blue Dental Logo" class="brand-image img-circle elevation-3"
+            style="opacity: .8">
+          <span class="brand-text font-weight-light">Blue Dental</span>
+        </a>
+
+        <button class="navbar-toggler order-1" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-3" id="navbarCollapse">
+          <!-- Left navbar links -->
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link active">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/Layanan/layanan.html" class="nav-link">Layanan</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/forms/form_booking.html" class="nav-link">Booking</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/testimoni.html" class="nav-link">Testimoni</a>
+            </li>
+            <li class="nav-item">
+              <a href="pages/tentang-kami/about.html" class="nav-link">Tentang</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Right navbar links -->
+        <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
+          <!-- SEARCH FORM -->
+          <form class="form-inline ml-0 ml-md-3">
+            <div class="input-group input-group-sm">
+              <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+              <div class="input-group-append">
+                <button class="btn btn-navbar" type="submit">
+                  <i class="fas fa-search"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+          <li class="nav-item">
+            <a class="nav-link" data-widget="login" href="pages/login/login.html" role="button">
+              Login
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+  </div>
+    <!-- Carousel Title -->
+    <section>
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="dist/img/image1.jpg" class="img-fluid image" alt="image in carousel 1" />
+  
+            <div class="container">
+              <div class="carousel-caption text-left">
+                <h1 class="display-4" style="font-weight: 500;">Best Clinic</h1>
+                <p>Klinik gigi pilihan yang terbaik untuk Anda.</p>
+                <p><a class="btn btn-lg text-light btn-dark" style="background-color: #05445E;" href="#about">Start to explore!</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+              <img src="dist/img/image2.jpg" class="img-fluid image" alt="image in carousel 2" />
+  
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 class="display-4" style="font-weight: 500;">Comfortable</h1>
+                <p>Klinik gigi teraman dan nyaman yang pernah Anda temui!</p>
+                <p><a class="btn btn-lg text-light btn-dark" style="background-color: #05445E;" href="pages/tentang-kami/about.html">Learn more</a></p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+              <img src="dist/img/image6.jpg" class="img-fluid image" alt="image in carousel 3" />
+  
+            <div class="container">
+              <div class="carousel-caption text-right">
+                <h1 class="display-4" style="font-weight: 500;">Newest Technology</h1>
+                <p>Dengan teknologi yang terbaru dan berkualitas.</p>
+                <p><a class="btn btn-lg text-light btn-dark" style="background-color: #05445E;" href="pages/forms/form_booking.html">Booking here!</a></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Main Section -->
+    <section class="mt-5" style="margin-bottom: 3rem;">
+      <div class="container">
+        <!-- Akses cepat -->
+        <div class="row py-4">
+            <div class="col-lg-10 text-center mx-auto">
+                <h1 class="mb-5">Welcome to Blue Dental</h1>
+            </div>
+            <div class="card col-lg-4 text-center mx-auto shadow-lg">
+              <img src="../dist/img/receive.png" class="mt-4" alt="">
+              <h2 class="mt-4"><a href="pages/Layanan/layanan.html" class="text-decoration-none text-info">Layanan</a></h2>
+            </div><!-- /.col-lg-4 -->
+            <div class="card col-lg-4 text-center mx-auto shadow-lg">
+              <img src="../dist/img/heart.png" class="mt-4" alt="">
+              <h2 class="mt-4"><a href="pages/forms/form_booking.html" class="text-decoration-none text-info">Buat Janji</a></h2>
+            </div><!-- /.col-lg-4 -->
+            <div class="card col-lg-4 text-center mx-auto shadow-lg">
+              <img src="../dist/img/hands.png" class="mt-4" alt="">
+              <h2 class="mt-4"><a href="#dokter-kami" class="text-decoration-none text-info">Dokter Kami</a></h2>
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+    </section>
+    
+    <br> <br>
+
+    <!-- About blue dental -->
+    <section style="background-color: #d4f1f4;" id="about">
+      <div class="container" style="padding-top: 0.5rem; padding-bottom: 3rem;">
+        <div class="row mt-5">
+          <div class="col">
+              <h1>Blue Dental</h1>
+          </div>
+        </div>
+        <div class="row py-4">
+          <div class="col img">
+            <img src="dist/img/image1.jpg" class="h-100 w-100" style="border-radius: 20px;" alt="">
+          </div>
+          <div class="col align-self-center">
+            <p class="card-about">Blue Dental adalah klinik gigi yang berdedikasi pada senyuman Anda indah dan sehat Anda. Saat ini Blue Dental dikepalai oleh Prof. Dr. Drg. Lucyana Odd, M.D Sc. Dibawah kepemimpinannya Blue Dental saat ini sudah banyak berkembang dibagian peralatan yang canggih dan perluasan cabang klinik.</p>
+            <p class="card-about">Saat ini Blue Dental sudah menyebar di 7 kota yang ada di Indonesia, salah satu pusatnya berada di Depok. Blue Dental sudah melayani banyak pasien sejak 2022. Kami berkembang dengan masukan dan kritik yang Anda berikan kepada kami.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br> <br>
+        
+    <!-- Card for dokter kami -->
+    <section id="dokter-kami">
+      <div class="container">
+        <div class="row mt-5 mb-4">
+          <div class="col">
+            <h1>Dokter Kami</h1>
+          </div>
+        </div>
+        <div class="row">
+          <!-- Card dokter 1 -->
+          <div class="col mb-4">
+            <div class="card h-100 shadow-md">
+              <img src="../dist/img/doctor5.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title mb-2">Drg. Amalia</h5>
+                <p class="card-text">Drg. Amalia Rahmah, Sp. KG, merupakan spesialis konservasi gigi yang mengutakaman kenyamanan pasien.</p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a href="pages/profil-dokter/profil_dokter2.html" class="btn btn-outline-info" style="border-radius: 6px;">View</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card dokter 2 -->
+          <div class="col mb-4">
+            <div class="card h-100 shadow-md">
+              <img src="../dist/img/doctor2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title mb-2">Drg. Kirana</h5>
+                <p class="card-text">Drg. Kirana Julia, Sp. KG, merupakan ahli spesialis ortodonti yang meneliti posisi rahang pasien yang tidak normal.</p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a href="pages/profil-dokter/profil_dokter3.html" class="btn btn-outline-info" style="border-radius: 6px;">View</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card dokter 3 -->
+          <div class="col mb-4">
+            <div class="card h-100 shadow-md">
+              <img src="../dist/img/doctor3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title mb-2">Drg. Rizki</h5>
+                <p class="card-text">Drg. Rizki Febryan, Sp. RKG, adalah seorang dokter yang akan mengambil gambar dan data x-ray rongga mulut Anda.</p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a href="pages/profil-dokter/profil_dokter4.html" class="btn btn-outline-info" style="border-radius: 6px;">View</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card dokter 4 -->
+          <div class="col mb-4">
+            <div class="card h-100 shadow-md">
+              <img src="../dist/img/doctor4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title mb-2">Drg. Devy</h5>
+                <p class="card-text">Drg. Devy Sendy Sp. KGA, adalah seorang dokter spesialis gigi anak, ia merawat gigi anak-anak dengan keceriaan.</p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a href="pages/profil-dokter/profil_dokter5.html" class="btn btn-outline-info" style="border-radius: 6px;">View</a>
+              </div>
+            </div>
+          </div>
+          <!-- Card dokter 5 -->
+          <div class="col mb-4">
+            <div class="card h-100 shadow-md">
+              <img src="../dist/img/doctor1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title mb-2">Drg. Zain</h5>
+                <p class="card-text">Drg. Zain Abdullah, Sp. KG, merupakan spesialis konservasi gigi yang akan menemani perawatan Anda dengan ketelitian.</p>
+              </div>
+              <div class="card-footer bg-transparent">
+                <a href="pages/profil-dokter/profil_dokter1.html" class="btn btn-outline-info" style="border-radius: 6px;">View</a>
+              </div>
+            </div>
+          </div>
+          <!-- ./Card dokter 5 -->
+        </div>
+      </div>
+    </section>
+
+    <br> <br>
+
+    <hr>
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- Footer -->
+  <footer class="my-3 pt-2 text-muted text-center text-small">
+    <p class="mb-1">Develop by Kelompok III - TI02 &copy; 2022</p>
+</footer>
+
+  <!-- REQUIRED SCRIPTS -->
+
+  <!-- jQuery -->
+  <script src="plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="dist/js/adminlte.min.js"></script>
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  </body>
+</html>

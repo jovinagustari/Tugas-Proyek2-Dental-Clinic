@@ -20,6 +20,9 @@
      <link rel="stylesheet" href="assets/css/layanan.css">
     <link rel="canonical" href="https://pelayananklinikahtong.carrd.co" />
        
+     <!-- Icon -->
+     <link rel="icon" href="../../dist/img/BlueDentalFavicon.png"/>
+
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,6 +30,7 @@
     <link
         href="https://fonts.googleapis.com/css?display=swap&family=Inter:400,400italic%7CDela+Gothic+One:400,400italic%7CInconsolata:500,500italic"
         rel="stylesheet" type="text/css" />
+
     <style>
          * {
         font-family: "Poppins", sans-serif;
@@ -37,30 +41,45 @@
     </style>
 </head>
 
-<body class="is-loading">
+<body class="is-loading layout-top-nav">
      <!-- Navbar Section -->
-     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+     <nav class="navbar navbar-expand-lg navbar-light navbar-white fixed-top shadow-lg" style="background-color: #d4f1f4">
         <div class="container">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
               <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="#">Hidden brand</a>
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <a href="../tentang-kami/tim-kami.html" class="navbar-brand">
+                    <img src="../../dist/img/BlueDentalLogo.png" alt="Blue Dental Logo" class="brand-image img-circle elevation-3" height="50" width="50"
+                      style="opacity: .7">
+                  </a>
+                  <span class="brand-text font-weight-light">Blue Dental</span>
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0 mx-3">
+                  <li class="nav-item">
+                    <a class="nav-link text-decoration-none" href="../../index.html">Home</a>
+                  </li>
                   <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link text-decoration-none" href="layanan.html">Layanan <span class="sr-only">(current)</span></a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link text-decoration-none" href="../forms/form_booking.html">Booking</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link disabled">Disabled</a>
+                    <a class="nav-link text-decoration-none" href="../testimoni.html">Testimoni</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-decoration-none" href="../tentang-kami/about.html">Tentang</a>
                   </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
-                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">   
                 </form>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link text-decoration-none" data-widget="login" href="../login/login.html" role="button"> Login
+                        </a>
+                      </li>
+                </ul>
               </div>
         </div>
       </nav>

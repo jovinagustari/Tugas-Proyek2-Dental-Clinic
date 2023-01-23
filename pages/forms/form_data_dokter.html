@@ -7,12 +7,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Form Booking | Blue Dental Clinic</title>
+  <title>Tambah Data Dokter | Blue Dental Clinic</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Favicon -->
+  <link rel="icon" href="../../dist/img/BlueDentalFavicon.png"/>
   <!-- Theme style -->
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
@@ -20,9 +22,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <div class="wrapper">
 
   <!-- Navbar -->
-  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
+  <nav class="main-header navbar navbar-expand-md navbar-light navbar-white sticky-top" style="background-color: #d4f1f4">
     <div class="container">
-      <a href="../index.html" class="navbar-brand">
+      <a href="../tentang-kami/tim-kami.html" class="navbar-brand">
         <img src="../../dist/img/BlueDentalLogo.png" alt="Blue Dental Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">Blue Dental</span>
       </a>
@@ -35,22 +37,22 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <!-- Left navbar links -->
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a href="../index.html" class="nav-link">Home</a>
+            <a href="../../index.html" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a href="layanan.html" class="nav-link">Layanan</a>
+            <a href="../Layanan/layanan.html" class="nav-link">Layanan</a>
           </li>
           <li class="nav-item">
-            <a href="form_booking.html" class="nav-link active">Booking</a>
+            <a href="../forms/form_booking.html" class="nav-link">Booking</a>
           </li>
           <li class="nav-item">
-            <a href="testimoni.html" class="nav-link">Testimoni</a>
+            <a href="../testimoni.html" class="nav-link">Testimoni</a>
           </li>
           <li class="nav-item dropdown">
-            <a id="dropdownSubMenu1" href="about.html" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Tentang Kami</a>
+            <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Tentang Kami</a>
             <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-              <li><a href="about.html" class="dropdown-item">About Blue Dental</a></li>
-              <li><a href="about.html" class="dropdown-item">Our Team</a></li>
+              <li><a href="../tentang-kami/about.html" class="dropdown-item">Tentang Blue Dental</a></li>
+              <li><a href="../tentang-kami/tim-kami.html" class="dropdown-item">Tim Kami</a></li>
             </ul>
           </li>
         </ul>
@@ -74,11 +76,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
               Login
             </a>
           </li>
-        <li class="nav-item">
-          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
-            <i class="fas fa-th-large"></i>
-          </a>
-        </li>
       </ul>
     </div>
   </nav>
@@ -92,12 +89,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="row mb-2">
           <div class="col-sm-6">
             <h1 class="m-0">Blue Dental HealthCare Clinic</h1>
-            <h5><small>Silahkan Isi Form Berikut Untuk Booking Layanan</small></h5>
+            <h5><small>Silahkan Isi Form Berikut</small></h5>
           </div><!-- /.col -->
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
-              <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-              <li class="breadcrumb-item active">Booking</li>
+              <li class="breadcrumb-item"><a href="../../index.html">Home</a></li>
+              <li class="breadcrumb-item active">Admin</li>
+              <li class="breadcrumb-item active">Tambah Data Dokter</li>
             </ol>
           </div><!-- /.col -->
         </div><!-- /.row -->
@@ -114,9 +112,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
         <div class="row">
             <div class="col-12">
                 <!-- general form elements -->
-                <div class="card card-primary">
-                    <div class="card-header">
-                        <h3 class="card-title">Booking Form</h3>
+                <div class="card">
+                    <div class="card-header" style="background-color: #d4f1f4">
+                        <h3 class="card-title">Form Tambah Data Dokter</h3>
                     </div>
                     <!-- /.card-header -->
                     <!-- form start -->
@@ -124,77 +122,38 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         <div class="card-body">
                             <div class="row">
                               <div class="form-group col-6">
-                                <label for="namaPasien">Nama</label>
-                                <input type="text" class="form-control" id="namaPasien"
-                                    placeholder="Masukkan Nama" />
+                                <label for="namaDokter">Nama Dokter</label>
+                                <input type="text" class="form-control" id="namaDokter"
+                                    placeholder="Masukkan Nama" required/>
                             </div>
                             <div class="form-group col-6">
-                                <label for="umurPasien">Umur</label>
-                                <input type="text" class="form-control" id="umurPasien"
-                                    placeholder="Masukkan Umur" />
-                            </div>
+                              <label for="gelarDokter">Gelar</label>
+                              <input type="text" class="form-control" id="gelarDokter"
+                                  placeholder="Masukkan Gelar" required />
+                          </div>
                             </div>
                             <div class="row">
                               <div class="form-group col-6">
-                                <label>Pilih Dokter</label>
+                                <label>Pilih Keahlian</label>
                                 <select class="form-control select2" style="width: 100%">
-                                    <option selected="selected">Drg. Amalia</option>
-                                    <option>Alaska</option>
-                                    <option disabled="disabled">
-                                        Drg. Kirana (disabled)
-                                    </option>
-                                    <option>Drg. Rizky</option>
-                                    <option>Drg. Devy</option>
-                                    <option>Drg. Zain</option>
+                                    <option selected="selected">Orthodontist</option>
+                                    <option>Spesialis Gigi Anak</option>
+                                    <option>Dokter Bedah Mulut</option>
                                 </select>
                             </div>
                             <div class="form-group col-6">
-                                <label>Pilih layanan</label>
+                                <label>Pilih Gender</label>
                                 <select class="form-control select2" style="width: 100%">
-                                    <option selected="selected">Cabut Gigi</option>
-                                    <option>Veneer</option>
-                                    <option>Teeth Whitening</option>
-                                    <option>Perawatan Gigi Anak</option>
-                                    <option>Tambal Gigi</option>
-                                    <option>Scaling</option>
+                                    <option selected="selected">Perempuan</option>
+                                    <option>Laki-Laki</option>
                                 </select>
                             </div>
-                            </div>
-                            <div class="row">
-                              <div class="form-group col-6">
-                                <label for="keluhanPasien">Keluhan</label>
-                                <input type="text" class="form-control" id="keluhanPasien"
-                                    placeholder="Tuliskan Keluhan Anda" />
-                            </div>
-                            <div class="form-group col-6">
-                                <label for="tglPeriksa">Tanggal Periksa</label><br />
-                                <input type="date" class="form-control" id="tglPeriksa" name="tglPeriksa" />
-                            </div>
-                            </div>
-  
-                            <label for="payment">Pembayaran</label>
-                            <div class="row my-3">
-                                <div class="custom-control custom-radio mx-2">
-                                    <input id="credit" name="paymentMethod" type="radio"
-                                        class="custom-control-input" checked required />
-                                    <label class="custom-control-label" for="credit">Transfer</label>
-                                </div>
-                                <div class="custom-control custom-radio mx-2">
-                                    <input id="e-wallet" name="paymentMethod" type="radio"
-                                        class="custom-control-input" required />
-                                    <label class="custom-control-label" for="e-wallet">E-wallet</label>
-                                </div>
-                                <div class="custom-control custom-radio mx-2">
-                                    <input id="cash" name="paymentMethod" type="radio"
-                                        class="custom-control-input" required />
-                                    <label class="custom-control-label" for="cash">Cash</label>
-                                </div>
                             </div>
                             <div class="row">
                               <div class="form-group col-6">
                                 <label for="noHp">No. Handphone</label>
                                 <input type="text" class="form-control" id="noHp"
-                                    placeholder="08xxxxxxxxxx" />
+                                    placeholder="08xxxxxxxxxx" required />
                             </div>
                             <div class="form-group col-6">
                                 <label for="inputEmail1">Email address</label>
@@ -204,7 +163,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                                 class="fas fa-envelope"></i></span>
                                     </div>
                                     <input type="email" class="form-control" id="inputEmail1"
-                                        placeholder="Masukkan Email" />
+                                        placeholder="Masukkan Email" required />
                                 </div>
                             </div>
                             </div>
@@ -215,11 +174,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </div>
                         <!-- /.card-body -->
   
-                        <div class="card-footer">
+                        <div class="card-footer" style="background-color: #d4f1f4">
                             <div class="row">
                                 <div class="col-3">
                                     <button class="btn btn-primary btn-lg btn-block" type="submit">
-                                        Simpan
+                                        <a href="../admin/admin_data_dokter.html" class="text-white">Simpan</a>
                                     </button>
                                 </div>
                                 <div class="col-2">
@@ -245,20 +204,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
   </div>
   <!-- /.content-wrapper -->
 
-  <!-- Control Sidebar -->
-  <aside class="control-sidebar control-sidebar-dark">
-    <!-- Control sidebar content goes here -->
-  </aside>
-  <!-- /.control-sidebar -->
-
   <!-- Main Footer -->
   <footer class="main-footer">
     <!-- To the right -->
     <div class="float-right d-none d-sm-inline">
-      Powered by AdminLTE
+      <small>Powered by AdminLTE</small>
     </div>
     <!-- Default to the left -->
-    <strong>Develop by Jovina Gustari @ 2022.</strong> All rights reserved.
+    <strong>Develop by Kelompok III - TI02 &copy; 2022.</strong> All rights reserved.
   </footer>
 </div>
 <!-- ./wrapper -->

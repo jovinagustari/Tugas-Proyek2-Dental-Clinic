@@ -6,11 +6,8 @@
 
     <!-- Bootstrap here -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
-    <title>Testimoni | Blue Dental</title>
-
-    <!-- Icon -->
-    <link rel="icon" href="../dist/img/logo.png"/>
-
+    <title>Testimoni | Blue Dental Clinic</title>
+    
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -19,6 +16,9 @@
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
     <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/carousel/">
+
+    <!-- Favicon -->
+  <link rel="icon" href="../dist/img/BlueDentalFavicon.png"/>
 
     <style>
       * {
@@ -56,40 +56,48 @@
       <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow-lg" style="background-color: #D4F1F4">
         <!-- Logo Brand -->
         <div class="container">
-          <a class="navbar-brand" href="#"><img src="../dist/img/BlueDentalLogo.png" width="50px" height="50px" alt="">Blue Dental</a>
+          <a class="navbar-brand" href="tentang-kami/tim-kami.html"><img src="../dist/img/BlueDentalLogo.png" width="50px" height="50px" alt="">Blue Dental</a>
           <!-- Navbar -->
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Beranda</a>
+              <li class="nav-item mx-1">
+                <a class="nav-link" href="../index.html">Beranda</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link mx-1" href="Layanan/layanan.html">Layanan</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-1" href="forms/form_booking.html">Booking</a>
               </li>
               <li class="nav-item active">
-                <a class="nav-link" href="#">Layanan</a>
+                <a class="nav-link mx-1" href="testimoni.html">Testimoni</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Booking</a>
-              </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="#">Testimoni</a>
-              </li>
-              <li class="nav-item active dropdown">
+              <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false"> Tentang </a>
                 <div class="dropdown-menu">
-                  <a class="dropdown-item mb-2" href="#">Tentang Blue Dental</a>
-                  <a class="dropdown-item" href="#">Tim Kami</a>
+                  <a class="dropdown-item mb-2" href="tentang-kami/about.html">Tentang Blue Dental</a>
+                  <a class="dropdown-item" href="tentang-kami/tim-kami.html">Tim Kami</a>
                 </div>
               </li>
             </ul>
             <!-- Search Form -->
             <ul class="order-1 order-md-3 navbar-nav navbar-no-expand ml-auto">
-              <form class="form-inline ml-0 ml-md-3">
-                <div class="navbar navbar-expand-lg">
-                  <!-- Here a line (101) for search input (dah ku hapus yg sebelumnya) -->
-                  <a class="btn btn-sm btn-outline-dark align-self-center" href="#">Login</a>
-                </div>
-              </form>
-            </ul>
-            <!-- ./Search Form  -->
+              <!-- SEARCH FORM -->
+        <form class="form-inline ml-0 ml-md-3">
+          <div class="input-group input-group-sm">
+            <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+            <div class="input-group-append">
+              <button class="btn btn-navbar" type="submit">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="login" href="login/login.html" role="button">
+            Login
+          </a>
+        </li>
           </div>
         </div>
       </nav>
@@ -325,7 +333,7 @@
 
     <!-- Footer -->
     <footer class="my-3 pt-2 text-muted text-center text-small">
-      <p class="mb-1">&copy; Develop by Iffah Karimah | TI02</p>
+      <p class="mb-1">Develop by Kelompok III - TI02 &copy; 2022</p>
     </footer>
 
     <!-- Javascript here -->

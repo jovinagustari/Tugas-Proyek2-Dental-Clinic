@@ -5,10 +5,10 @@ function register() {
     let password = document.getElementById('password').value;
 
     if (name != "" && email != "" && username != "" && password != "") {
-        alert("Registrasi Anda Berhasil");
-        register.setAttribute("action", "../admin.html");
+        alert("Registrasi Anda Berhasil, silahkan lakukan Login");
+        register.setAttribute("action", "login.html");
     }
     else {
-        alert("Silahkan lengkapi data Anda");
+        alert("Pastikan anda telah mengisi dengan benar dan lengkap!");
     }
 }
